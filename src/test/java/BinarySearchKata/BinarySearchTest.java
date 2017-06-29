@@ -16,25 +16,30 @@ public class BinarySearchTest {
     @Test
     public void binSearchShouldReturnIndexZeroInArrayWithOneElement(){
 
-        int [] myArray = {1};
-
-        Assert.assertEquals(0, bs.binSearch(1, myArray));
+        Assert.assertEquals(0, bs.binSearch(1, new int[]{1}));
 }
 
     @Test
     public void binSearchShouldReturnIndexNegativeOneInEmptyArray(){
 
-        int[] myArray = {};
-
-        Assert.assertEquals(-1, bs.binSearch(-1, myArray));
+        Assert.assertEquals(-1, bs.binSearch(-1, new int[]{}));
     }
 
     @Test
     public void binSearchShouldReturnIndexNegativeOneWhenNumberSearchIsNotInArray(){
 
-        int [] myArray = {1};
-
-        Assert.assertEquals(-1, bs.binSearch(2, myArray));
+        Assert.assertEquals(-1, bs.binSearch(2, new int[]{1}));
     }
 
+    @Test
+    public void binSearchShouldReturnIndexOneWhenArrayHasThreeElement(){
+
+        Assert.assertEquals(1, bs.binSearch(2, new int[]{1,2,3}));
+    }
+
+    @Test
+    public void binSearchShouldReturnIndexTwoWhenArrayHasThreeElement(){
+
+        Assert.assertEquals(2, bs.binSearch(3, new int[]{1,2,3}));
+    }
 }

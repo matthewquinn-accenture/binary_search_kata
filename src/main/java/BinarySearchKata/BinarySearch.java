@@ -4,8 +4,12 @@ public class BinarySearch {
 
 
     public int binSearch(int numberSearch, int[] myArray) {
-        if(myArray.length == 0 || myArray[0] != numberSearch)
-            return -1;
-        return 0;
+        for (int i = 0; i < myArray.length; i++) {
+            if(myArray[i] == numberSearch){
+                return i;
+            }
+        }
+        return -1;
+
     }
 }
