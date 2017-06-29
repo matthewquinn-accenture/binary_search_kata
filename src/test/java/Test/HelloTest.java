@@ -1,13 +1,13 @@
-package TestKata;
+package Test;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-public class helloTest {
+public class HelloTest {
 
     @Test
     public void helloShouldReturnTrue(){
-        hello h = new hello();
+        Hello h = new Hello();
         Assert.assertEquals(true,h.hello(true));
     }
 

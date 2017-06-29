@@ -1,7 +1,7 @@
-package TestKata;
+package Test;
 
 
-public class hello {
+public class Hello {
     public boolean hello(boolean b) {
         return true;
     }
