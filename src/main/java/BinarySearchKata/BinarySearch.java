@@ -3,7 +3,9 @@ package BinarySearchKata;
 public class BinarySearch {
 
 
-    public int chop(int i, int[] ints) {
+    public int binSearch(int numberSearch, int[] myArray) {
+        if(myArray.length == 0 || myArray[0] != numberSearch)
+            return -1;
         return 0;
     }
 }
